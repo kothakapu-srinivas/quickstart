@@ -1,0 +1,12 @@
+name: Job Level Greetings
+run-name: ${{ github.actor }} greetings at Job levl"
+on: push
+jobs:
+    environment_at_job_level:
+        runs-on: ubuntu-latest
+        env:
+            GREETINGS: Hello!
+        steps:
+            - run: |
+                echo "Environment at Job Level" 
+                echo ${GREETINGS}   
