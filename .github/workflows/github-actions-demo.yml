@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: ${{ matrix.version }}
       
-      - name: Print OS and Node versions   
+      - name: Print ${{ matrix.os }} on ${{ matrix.version }}   
         run: |
           cat /etc/os-release
           echo
