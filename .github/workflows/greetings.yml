@@ -1,0 +1,11 @@
+run-name: Wishing from ${{ github.actor }}
+on: push
+env:
+    GREETINGS: Hello
+jobs:
+    greetings:
+        runs-on: ubuntu-latest
+        steps:
+            - run: |
+                echo "ENV defined at Worflow Level"
+                echo $GREETING 
