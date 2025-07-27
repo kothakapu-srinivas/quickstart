@@ -1,0 +1,20 @@
+name: Step Level Environment Variable
+on: push
+jobs:
+  step_level_env:
+    runs-on: ubuntu-latest
+    steps:
+      env:
+        GREETINGS: Welcome
+      - run: echo $GREETINGS  
+    
+  
+
+
+
+
+
+
+
+
+ 
